@@ -5,25 +5,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-
     <nav class =''>
       <h4 class='' id =''>What's for Dinner?</h4>
-      <button class='' id=''>Add a recipe</button>
+      <!-- <button class='' id=''>Add a recipe</button> -->
     </nav>
     <main class=''>
-      <img src ='https://github.com/madhaus4/whats-for-dinner/blob/main/assets/burger-friends.jpg?raw=true' alt='background image for main page'>
+      <img src ='https://github.com/madhaus4/whats-for-dinner/blob/main/assets/burger-friends.jpg?raw=true' alt='background image for main page' height='800pxl' width='1024pxl'>
       <section class ='' id=''>
         <h3 class ='' id=''>What are you looking for?</h3>
         <ul class=''>
+          <input type ='radio' name ='food' value='side' />
           <li id=''>Side</li>
+          <input type ='radio' name ='food' value='main-dish' />
           <li id=''>Main Dish</li>
+          <input type ='radio' name ='food' value='dessert' />
           <li id=''>Dessert</li>
-          <li id=''>Entire Meal</li>
+          <!-- <input type ='radio' name ='food' value='entire-meal' />
+          <li id=''>Entire Meal</li> -->
         </ul>
+        <input type ='submit' name ='cook' value='lets-cook!' />
         <button class ='' id=''>Let's cook!</button>
       </section>
       <section class ='' id=''>
-        <img src='https://raw.githubusercontent.com/madhaus4/whats-for-dinner/e878451b89d5bc7d7cca934ce938c4fd2bb47389/assets/cookpot.svg' alt='cookpot graphic'>
+        <img src='https://raw.githubusercontent.com/madhaus4/whats-for-dinner/e878451b89d5bc7d7cca934ce938c4fd2bb47389/assets/cookpot.svg' alt='cookpot graphic' height='400pxl' width='400pxl'>
           <section class='' id=''>
             <p class='' id=''>You should make:</p>
             <p class='' id=''></p>
@@ -31,8 +35,7 @@
           </section>
       </section>
     </main>
-
   </body>
   <script type='text/javascript' src='main.js'></script>
-  <script>type='text/javascript' src='data.js'</script>
+  <script type='text/javascript' src='data.js'></script>
 </html>
