@@ -1,38 +1,45 @@
 <!DOCTYPE.html>
 <html>
+
   <head>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
-  <body class='grid-container'>
+
+  <body>
+
     <nav class ='nav'>
-      <h4 class='whats-for-dinner' id =''>What's for Dinner?</h4>
-      <!-- <button class='' id=''>Add a recipe</button> -->
+      <h4 class='whats-for-dinner' id ='whatsForDinner'>What's for Dinner?</h4>
+      <button class='add-recipe-btn' id='addRecipeBtn'>ADD A RECIPE</button>
     </nav>
-    <main class='main'>
-      <img src ='https://github.com/madhaus4/whats-for-dinner/blob/main/assets/burger-friends.jpg?raw=true' alt='background image for main page'>
-      <section class ='section1' id=''>
-        <h3 class ='pick-list-option' id=''>What are you looking for?</h3>
+
+    <main>
+      <!-- <img class='background-img' src='assets/burger-friends.jpg' alt='background image for main page'> -->
+
+      <section class ='section' id='sectionId'>
+        <h3 class ='pick-list-option' id='pickListOption'>What are you looking for?</h3>
         <ul class='food-list-options'>
           <input type ='radio' name ='food' value='side' />
           <li id='side'>Side</li>
           <input type ='radio' name ='food' value='main-dish' />
-          <li id='main-dish'>Main Dish</li>
+          <li id='mainDish'>Main Dish</li>
           <input type ='radio' name ='food' value='dessert' />
           <li id='dessert'>Dessert</li>
           <!-- <input type ='radio' name ='food' value='entire-meal' />
           <li id=''>Entire Meal</li> -->
         </ul>
-        <input type ='submit' name ='cook' />
         <button class ='lets-cook-btn' id=''>Let's cook!</button>
       </section>
-      <section class ='section2' id=''>
-        <img src='https://raw.githubusercontent.com/madhaus4/whats-for-dinner/e878451b89d5bc7d7cca934ce938c4fd2bb47389/assets/cookpot.svg' alt='cookpot graphic' height='400pxl' width='400pxl'>
-          <section class='' id=''>
-            <p class='you-should-make' id=''>You should make:</p>
+
+        <section class ='section' id='sectionId'>
+        <img class ='' src='assets/cookpot.svg' alt='cookpot graphic'>
+
+          <section class='' id=''> -->
+            <p class='you-should-make' id='youShouldMake' view='hidden'>You should make:</p>
             <p class='menu-item' id=''></p>
-            <button class='clear-btn' id=''>Clear</button>
+            <button class='clear-btn' id='clearBtn'>Clear</button>
           </section>
+
       </section>
     </main>
   </body>
