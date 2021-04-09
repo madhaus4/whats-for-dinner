@@ -17,30 +17,34 @@
       <!-- <img class='background-img' src='assets/burger-friends.jpg' alt='background image for main page'> -->
 
       <section class ='section' id='sectionId'>
-        <h3 class ='pick-list-option' id='pickListOption'>What are you looking for?</h3>
-        <ul class='food-list-options'>
-          <input type ='radio' name ='food' value='side' />
-          <li id='side'>Side</li>
-          <input type ='radio' name ='food' value='main-dish' />
-          <li id='mainDish'>Main Dish</li>
-          <input type ='radio' name ='food' value='dessert' />
-          <li id='dessert'>Dessert</li>
-          <!-- <input type ='radio' name ='food' value='entire-meal' />
-          <li id=''>Entire Meal</li> -->
-        </ul>
-        <button class ='lets-cook-btn' id=''>Let's cook!</button>
+          <h1 class ='pick-list-option' id='pickListOption'>What are you looking for?<label style="color: #ee5253">*</label></h1>
+          <div class='food-list-options'>
+            <input type='radio' name ='food' value='side' />
+            <label id='side'>Side</label><br>
+            <br>
+            <input type='radio' name ='food' value='main-dish' />
+            <label id='mainDish'>Main Dish</label><br>
+            <br>
+            <input type='radio' name ='food' value='dessert' />
+            <label id='dessert'>Dessert</label><br>
+            <br>
+            <input type ='radio' name ='food' value='entire-meal' />
+            <label id=''>Entire Meal</label><br>
+            <br>
+          </div>
+          <button class='lets-cook-btn' id=''>LET'S COOK!</button>
       </section>
 
-        <section class ='section' id='sectionId'>
-        <img class ='' src='assets/cookpot.svg' alt='cookpot graphic'>
+        <section class='section' id='sectionId'>
+          <img class='cookpot-img' src='assets/cookpot.svg' alt='cookpot graphic'>
 
-          <section class='' id=''> -->
-            <p class='you-should-make' id='youShouldMake' view='hidden'>You should make:</p>
+          <article hidden class='display-recipe'>
+            <p class='you-should-make' id='youShouldMake'>You should make:</p>
             <p class='menu-item' id=''></p>
             <button class='clear-btn' id='clearBtn'>Clear</button>
-          </section>
+          </article>
+        </section>
 
-      </section>
     </main>
   </body>
   <script type='text/javascript' src='main.js'></script>
