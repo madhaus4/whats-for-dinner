@@ -17,7 +17,7 @@ var letsCookBtn = document.querySelector('#lets-cook-btn');
 letsCookBtn.addEventListener('click', populateDish);
 
 function randomDishItem(array) {
-  array[Math.floor(Math.random() * array.length)];
+  return array[Math.floor(Math.random() * array.length)];
 }
 
 function sample() {
@@ -26,24 +26,16 @@ function sample() {
 }
 
 function populateDish() {
+  event.preventDefault();
   cookpotImg.classList.add('hidden');
   youShouldMake.classList.remove('hidden');
 
-console.log(randomDishItem(sides));
+  var foodItem = '';
+  if (sideOption.checked) {
+    foodItem = randomDishItem(sides);
+  } else if (mainOption.checked) {
+    foodItem = randomDishItem(mains);
+  } else if (dessertOption.checked) {
+    foodItem = randomDishItem(desserts);
+  }
 }
-
-
-//
-// console.log(sides);
-// console.log(mains);
-// console.log(desserts);
-
-
-// if side is selected, display item from sides array
-// create for loop to cycle through sides array
-// if main is selected, display item from mains array
-// create for loop to cycle through mains array
-// if dessert is selected, display item from desserts array
-// create for loop to cycle through desserts
-
-// nvm use .random
