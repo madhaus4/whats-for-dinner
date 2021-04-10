@@ -1,10 +1,3 @@
-// when a user clicks letsCookBtn,
-// a random dish is populated from the list of possible dishes for that category
-// when the dish is displayed, the cookpot img is hidden
-
-// var randomSide = sides[Math.floor(Math.random() * sides.length)];
-// var randomMain = mains[Math.floor(Math.random() * mains.length)];
-// var randomDessert = desserts[Math.floor(Math.random() * desserts.length)];
 
 var sideOption = document.querySelector('#side');
 var mainOption = document.querySelector('#mainDish');
