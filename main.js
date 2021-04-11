@@ -1,11 +1,12 @@
-
 var sideOption = document.querySelector('#side');
 var mainOption = document.querySelector('#mainDish');
 var dessertOption = document.querySelector('#dessert');
 var cookpotImg = document.querySelector('#sectionId');
 var youShouldMake = document.querySelector('#displayId');
+var menuItem = document.querySelector('#menuItem');
 
 var letsCookBtn = document.querySelector('#lets-cook-btn');
+var clearBtn = document.querySelector('#clearBtn');
 
 letsCookBtn.addEventListener('click', populateDish);
 
@@ -31,4 +32,10 @@ function populateDish() {
   } else if (dessertOption.checked) {
     foodItem = randomDishItem(desserts);
   }
+// display foodItem in '.section'
+
+  menuItem.classList.remove('hidden');
+  clearBtn.classList.remove('hidden');
+
+
 }
