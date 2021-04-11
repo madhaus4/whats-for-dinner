@@ -17,31 +17,34 @@
       <!-- <img class='background-img' src='assets/burger-friends.jpg' alt='background image for main page'> -->
 
       <section class ='section' id='sectionId'>
-          <h1 class ='pick-list-option' id='pickListOption'>What are you looking for?<label style="color: #ee5253">*</label></h1>
-          <div class='food-list-options'>
+        <h1 class ='pick-list-option' id='pickListOption'>What are you looking for?<label style="color: #ee5253">*</label>
+        </h1>
+
+          <form class='food-list-options'>
             <input id='side' type='radio' name ='food' value='side' />
-            <label for='side'>Side</label><br>
-            <br>
+            <label for='side'>Side</label>
+            <br><br>
             <input id='mainDish' type='radio' name ='food' value='main-dish' />
-            <label for='mainDish'>Main Dish</label><br>
-            <br>
+            <label for='mainDish'>Main Dish</label>
+            <br><br>
             <input id='dessert' type='radio' name ='food' value='dessert' />
-            <label for='desserts'>Dessert</label><br>
-            <br>
+            <label for='desserts'>Dessert</label>
+            <br><br>
             <input type ='radio' name ='food' value='entire-meal' />
-            <label id=''>Entire Meal</label><br>
-            <br>
-          </div>
-          <button class='lets-cook-btn' id='lets-cook-btn'>LET'S COOK!</button>
+            <label id=''>Entire Meal</label>
+            <br><br>
+            <button class='lets-cook-btn' id='lets-cook-btn'>LET'S COOK!</button>
+          </form>
+
       </section>
 
         <section class='section' id='sectionId'>
           <img class='cookpot-img' src='assets/cookpot.svg' alt='cookpot graphic'>
 
           <article hidden class='display-recipe' id='displayId'>
-            <p class='you-should-make' id='youShouldMake'>You should make:</p>
-            <p class='menu-item' id=''></p>
-            <button class='clear-btn' id='clearBtn'>Clear</button>
+            <p hidden class='you-should-make' id='youShouldMake'>You should make:</p>
+            <p hidden class='menu-item' id='menuItem'></p>
+            <button hidden class='clear-btn' id='clearBtn'>Clear</button>
           </article>
         </section>
 
