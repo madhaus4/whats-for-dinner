@@ -35,7 +35,8 @@ function populateDish() {
 }
 
 function displayDish() {
-  menuItem.innerHTML += `${foodItem}!`;
+  document.getElementById('menuItem').style.fontSize = '1.5em';
+  menuItem.innerHTML += `${foodItem}! `;
 
   cookpotImg.classList.add('hidden');
   dish.classList.remove('hidden');
@@ -43,8 +44,8 @@ function displayDish() {
   menuItem.classList.remove('hidden');
 }
 
-  //
-  // menuItem.innerHTML = '';
-  // for (var i = 0; i < menuItem.length; i++) {
-  //   menuItem.innerHTML += '';
-  // }
+
+  menuItem.innerHTML = '';
+  for (var i = 0; i < menuItem.length; i++) {
+    menuItem.innerHTML += '';
+  }
