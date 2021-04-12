@@ -52,6 +52,10 @@ nav {
   border-style: inherit;
 }
 
+.add-recipe-btn {
+  margin-right: 20px;
+}
+
 .lets-cook-btn {
   background-color: #0fb9b1;
 }
@@ -74,8 +78,22 @@ img {
   align-self: center;
   height: 20vh;
   width: 20vw;
+  margin-top: 75px;
 }
 
 .food-list-options {
   text-align: left;
+}
+
+.display-recipe {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: inherit;
+  padding-bottom: 55px;
+  margin: auto;
+}
+
+.menu-item {
+  font size: 26px;
 }
