@@ -1,41 +1,51 @@
 var sideOption = document.querySelector('#side');
 var mainOption = document.querySelector('#mainDish');
 var dessertOption = document.querySelector('#dessert');
-var cookpotImg = document.querySelector('#sectionId');
-var youShouldMake = document.querySelector('#displayId');
+var cookpotImg = document.querySelector('img');
+var youShouldMake = document.querySelector('#youShouldMake');
 var menuItem = document.querySelector('#menuItem');
-
 var letsCookBtn = document.querySelector('#lets-cook-btn');
 var clearBtn = document.querySelector('#clearBtn');
+var foodItem = '';
 
-letsCookBtn.addEventListener('click', populateDish);
+letsCookBtn.addEventListener('click', function() {
+  populateDish();
+  displayDish();
+});
+clearBtn.addEventListener('click', clearSelection);
 
 function randomDishItem(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
 
-function sample() {
-  var mainDishItem = mains[randomDishItem(mains)];
-  console.log(mainDishItem);
-}
-
 function populateDish() {
   event.preventDefault();
-  cookpotImg.classList.add('hidden');
-  youShouldMake.classList.remove('hidden');
-
-  var foodItem = '';
   if (sideOption.checked) {
-    foodItem = randomDishItem(sides);
+    return foodItem = randomDishItem(sides);
   } else if (mainOption.checked) {
-    foodItem = randomDishItem(mains);
+    return foodItem = randomDishItem(mains);
   } else if (dessertOption.checked) {
-    foodItem = randomDishItem(desserts);
+    return foodItem = randomDishItem(desserts);
   }
-// display foodItem in '.section'
+  alert('You didn\'t choose an option');
+}
 
-  menuItem.classList.remove('hidden');
-  clearBtn.classList.remove('hidden');
+function displayDish() {
+  cookpotImg.classList.add('visibility-hidden');
+  youShouldMake.classList.remove('visibility-hidden');
+  menuItem.classList.remove('visibility-hidden');
+  clearBtn.classList.remove('visibility-hidden');
+  menuItem.innerHTML += `<p>${foodItem}!</p>`;
+}
 
+function clearSelection() {
+  var clearMenuItem = event.target.className('clear-btn');
+  for (var i = 0; i < menuItem.length; i++) {
+    menuItem.innerHTML += '';
+  }
+  // cookpotImg.classList.remove('visibility-hidden');
+  // youShouldMake.classList.add('visibility-hidden');
+  // menuItem.classList.add('visibility-hidden');
+  // clearBtn.classList.add('visibility-hidden');
 
 }

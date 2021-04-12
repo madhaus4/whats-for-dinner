@@ -8,7 +8,9 @@ frosted white - rgba(225, 225, 225, .9);
 grey - #95a5a6;
 red - #ee5253  */
 
-.visibility-hidden{display:none}
+.visibility-hidden {
+  display:none;
+}
 
 body {
   background-image: url(assets/burger-friends.jpg);
@@ -73,8 +75,6 @@ nav {
   height: 20vh;
   width: 20vw;
 }
-
-
 
 .food-list-options {
   text-align: left;

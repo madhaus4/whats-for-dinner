@@ -1,25 +1,18 @@
 <!DOCTYPE.html>
 <html>
-
   <head>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
-
   <body>
-
     <nav class ='nav'>
       <h4 class='whats-for-dinner' id ='whatsForDinner'>What's for Dinner?</h4>
       <button class='add-recipe-btn' id='addRecipeBtn'>ADD A RECIPE</button>
     </nav>
-
     <main>
-      <!-- <img class='background-img' src='assets/burger-friends.jpg' alt='background image for main page'> -->
-
       <section class ='section' id='sectionId'>
-        <h1 class ='pick-list-option' id='pickListOption'>What are you looking for?<label style="color: #ee5253">*</label>
+        <h1 class ='pick-list-option' id='pickListOption'>What are you looking for?<span style="color: #ee5253">*</span>
         </h1>
-
           <form class='food-list-options'>
             <input id='side' type='radio' name ='food' value='side' />
             <label for='side'>Side</label>
@@ -30,24 +23,20 @@
             <input id='dessert' type='radio' name ='food' value='dessert' />
             <label for='desserts'>Dessert</label>
             <br><br>
-            <input type ='radio' name ='food' value='entire-meal' />
+            <!-- <input type ='radio' name ='food' value='entire-meal' />
             <label id=''>Entire Meal</label>
-            <br><br>
+            <br><br> -->
             <button class='lets-cook-btn' id='lets-cook-btn'>LET'S COOK!</button>
           </form>
-
       </section>
-
-        <section class='section' id='sectionId'>
-          <img class='cookpot-img' src='assets/cookpot.svg' alt='cookpot graphic'>
-
-          <article hidden class='display-recipe' id='displayId'>
-            <p hidden class='you-should-make' id='youShouldMake'>You should make:</p>
-            <p hidden class='menu-item' id='menuItem'></p>
-            <button hidden class='clear-btn' id='clearBtn'>Clear</button>
+        <section class='section'>
+          <article class='display-recipe' id='displayId'>
+            <img src='assets/cookpot.svg' alt='cookpot graphic'>
+            <p class='you-should-make visibility-hidden' id='youShouldMake'>You should make:</p>
+            <div class='menu-item visibility-hidden' id='menuItem'></div>
+            <button  class='clear-btn visibility-hidden' id='clearBtn'>Clear</button>
           </article>
         </section>
-
     </main>
   </body>
   <script type='text/javascript' src='./main.js'></script>
