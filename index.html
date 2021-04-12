@@ -13,30 +13,30 @@
       <section class ='section' id='sectionId'>
         <h1 class ='pick-list-option' id='pickListOption'>What are you looking for?<span style="color: #ee5253">*</span>
         </h1>
-          <form class='food-list-options'>
-            <input id='side' type='radio' name ='food' value='side' />
-            <label for='side'>Side</label>
-            <br><br>
-            <input id='mainDish' type='radio' name ='food' value='main-dish' />
-            <label for='mainDish'>Main Dish</label>
-            <br><br>
-            <input id='dessert' type='radio' name ='food' value='dessert' />
-            <label for='desserts'>Dessert</label>
-            <br><br>
-            <!-- <input type ='radio' name ='food' value='entire-meal' />
-            <label id=''>Entire Meal</label>
-            <br><br> -->
-            <button class='lets-cook-btn' id='lets-cook-btn'>LET'S COOK!</button>
-          </form>
+        <form class='food-list-options'>
+          <input id='side' type='radio' name ='food' value='side' />
+          <label for='side'>Side</label>
+          <br><br>
+          <input id='mainDish' type='radio' name ='food' value='main-dish' />
+          <label for='mainDish'>Main Dish</label>
+          <br><br>
+          <input id='dessert' type='radio' name ='food' value='dessert' />
+          <label for='desserts'>Dessert</label>
+          <br><br>
+          <!-- <input type ='radio' name ='food' value='entire-meal' />
+          <label id=''>Entire Meal</label>
+          <br><br> -->
+          <button class='lets-cook-btn' id='lets-cook-btn'>LET'S COOK!</button>
+        </form>
       </section>
-        <section class='section'>
-          <article class='display-recipe' id='displayId'>
-            <img src='assets/cookpot.svg' alt='cookpot graphic'>
-            <p class='you-should-make visibility-hidden' id='youShouldMake'>You should make:</p>
-            <div class='menu-item visibility-hidden' id='menuItem'></div>
-            <button  class='clear-btn visibility-hidden' id='clearBtn'>Clear</button>
-          </article>
-        </section>
+      <section class='section'>
+        <img src='assets/cookpot.svg' alt='cookpot graphic'>
+        <article class='display-recipe hidden' id='displayId'>
+          <p class='you-should-make hidden' id='youShouldMake'><em>You should make:</em></p>
+          <div class='menu-item hidden' id='menuItem'></div>
+          <button class='clear-btn hidden' id='clearBtn'>Clear</button>
+        </article>
+      </section>
     </main>
   </body>
   <script type='text/javascript' src='./main.js'></script>

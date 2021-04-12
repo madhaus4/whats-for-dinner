@@ -8,7 +8,7 @@ frosted white - rgba(225, 225, 225, .9);
 grey - #95a5a6;
 red - #ee5253  */
 
-.visibility-hidden {
+.hidden {
   display:none;
 }
 
@@ -52,6 +52,10 @@ nav {
   border-style: inherit;
 }
 
+.add-recipe-btn {
+  margin-right: 20px;
+}
+
 .lets-cook-btn {
   background-color: #0fb9b1;
 }
@@ -68,14 +72,28 @@ nav {
   margin: 40px;
 }
 
-.cookpot-img {
+img {
   display: flex;
   justify-content: space-around;
   align-self: center;
   height: 20vh;
   width: 20vw;
+  margin-top: 75px;
 }
 
 .food-list-options {
   text-align: left;
+}
+
+.display-recipe {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: inherit;
+  padding-bottom: 55px;
+  margin: auto;
+}
+
+.menu-item {
+  font size: 26px;
 }
