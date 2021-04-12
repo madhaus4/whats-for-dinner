@@ -6,7 +6,6 @@ var dish = document.querySelector('#displayId');
 var youShouldMake = document.querySelector('#youShouldMake');
 var menuItem = document.querySelector('#menuItem');
 var letsCookBtn = document.querySelector('#lets-cook-btn');
-// var clearBtn = document.querySelector('#clearBtn');
 
 letsCookBtn.addEventListener('click', function() {
   populateDish();
@@ -39,9 +38,3 @@ function displayDish() {
   youShouldMake.classList.remove('hidden');
   menuItem.classList.remove('hidden');
 }
-
-
-  // menuItem.innerHTML = '';
-  // for (var i = 0; i < menuItem.length; i++) {
-  //   menuItem.innerHTML += '';
-  // }
